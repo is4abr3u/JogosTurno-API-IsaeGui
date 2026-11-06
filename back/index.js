@@ -8,7 +8,7 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-app.use('/api/v1/restaurante/partidas', partidas)
+app.use('/api/v1/jogo/partidas', partidas)
 database.db
     .sync({ force: false })
     .then((_) => {
@@ -17,5 +17,5 @@ database.db
         })
     })
     .catch((e) => {
-        console.log(e)
+        console.log((e))
     })
