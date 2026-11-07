@@ -1,9 +1,9 @@
 import partida from "../model/partida.js"
 
-class RepositoryPartida {
+class RepositoryJogo {
 
-    async Buscar() {
-        return partida.findAll()
+    async Status() {
+        return partida.Status()
     }
 
     async Detalhe(id) {
@@ -40,4 +40,4 @@ class RepositoryPartida {
 
 }
 
-export default new RepositoryPartida()
+export default new RepositoryJogo()
